@@ -1,6 +1,7 @@
 .main {
     display: grid;
     grid-template-columns: 5fr 2fr;
+    position: relative;
 }
 
 .exercises {
@@ -10,6 +11,7 @@
 
 .user {
     background-color: honeydew;
+    top: 0%;
 }
 
 .title-icon {
