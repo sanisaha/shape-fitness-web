@@ -1,0 +1,23 @@
+.main {
+    display: grid;
+    grid-template-columns: 5fr 2fr;
+}
+
+.exercises {
+    background-color: aliceblue;
+    padding: 40px 60px;
+}
+
+.user {
+    background-color: sandybrown;
+}
+
+.title-icon {
+    display: flex;
+    align-items: center;
+}
+
+.title-icon h1 {
+    font-style: italic;
+    margin-left: 20px;
+}
