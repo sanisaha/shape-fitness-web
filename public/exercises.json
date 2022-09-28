@@ -1,6 +1,7 @@
 [
     {
         "name": "Badminton",
+        "id": "6334d176e4f65e5af9c3eba8",
         "img": "./images/badminton.jpg",
         "description": "Helps in toning your muscles and improves your flexibility",
         "gender": "Male & Female",
@@ -8,6 +9,7 @@
     },
     {
         "name": "Cycling",
+        "id": "6334d17609474708e60a5e73",
         "img": "./images/biking.jpg",
         "description": "Lower body workout that works your quads, hamstrings, and calves",
         "gender": "Male & Female",
@@ -15,6 +17,7 @@
     },
     {
         "name": "Futsal",
+        "id": "6334d17609474708e60a5eka",
         "img": "./images/Futsal-Ball.jpg",
         "description": "Increase hearts endurance, lung capacity, muscle power and mental health.",
         "gender": "Male",
@@ -22,6 +25,7 @@
     },
     {
         "name": "Kayaking",
+        "id": "6334d17609474708e60a5e79",
         "img": "./images/kayaking.jpg",
         "description": "Kayaking can help you to shed some weight and increase muscle strength",
         "gender": "Male & Female",
@@ -29,6 +33,7 @@
     },
     {
         "name": "Strength Training",
+        "id": "6334d17609474708e60a5e21",
         "img": "./images/strength training.jpg",
         "description": "Help you manage or lose weight and increase your metabolism to burn calories",
         "gender": "Male",
@@ -36,6 +41,7 @@
     },
     {
         "name": "Swimming",
+        "id": "6334d17609474708e60a5e11",
         "img": "./images/swimming.jpg",
         "description": "swimming stretches your muscles and increases flexibility",
         "gender": "Male & Female",
@@ -43,6 +49,7 @@
     },
     {
         "name": "Table-Tennis",
+        "id": "6334d17609474708e60a5e97",
         "img": "./images/table-tennis.jpg",
         "description": "Increases concentration and alertness, stimulates brain function",
         "gender": "Male & Female",
@@ -50,6 +57,7 @@
     },
     {
         "name": "Walking",
+        "id": "6334d17609474708e60a5ew2",
         "img": "./images/walking.jpg",
         "description": "Walking is a great way to improve or maintain your overall health",
         "gender": "Female",
@@ -57,6 +65,7 @@
     },
     {
         "name": "Yoga",
+        "id": "6334d17609474708e60a5ep3",
         "img": "./images/yoga.jpg",
         "description": "Yoga lower blood pressure, strengthen the immune system and reduce stress levels.",
         "gender": "Female",

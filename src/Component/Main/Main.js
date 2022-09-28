@@ -13,6 +13,12 @@ const Main = () => {
             .then(data => setExercises(data))
     }, [])
 
+    const btnHandler = (exercise) => {
+        const activityTime = document.getElementById('activity-time')
+        activityTime.innerText = exercise.time;
+
+    }
+
     return (
         <div className='main'>
             <div className='exercises'>
@@ -30,6 +36,7 @@ const Main = () => {
                         exercises.map(exercise => <Exercise
                             key={exercise.name}
                             exercise={exercise}
+                            btnHandler={btnHandler}
                         ></Exercise>)
                     }
                 </div>

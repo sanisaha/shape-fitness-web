@@ -2,7 +2,8 @@ import React from 'react';
 import './Exercise.css'
 
 const Exercise = (props) => {
-    const { name, img, description, gender, time } = props.exercise;
+    const { btnHandler, exercise } = props;
+    const { name, img, description, gender, time, id } = exercise;
     return (
         <div className='exercise-category'>
             <img src={img} alt="" />
@@ -12,7 +13,7 @@ const Exercise = (props) => {
                 <p>Target group: {gender}</p>
                 <p>Time Spent: {time}min</p>
             </div>
-            <button className='btn-add'><p>Add today</p></button>
+            <button className='btn-add' onClick={() => btnHandler(exercise)}><p>Add today</p></button>
         </div>
     );
 };

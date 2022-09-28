@@ -47,7 +47,7 @@ const User = () => {
             </div>
             <div className='time-spent'>
                 <h3>Activity time</h3>
-                <p>
+                <p id='activity-time'>
 
                 </p>
             </div>
