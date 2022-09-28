@@ -1,9 +1,17 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHeartPulse } from '@fortawesome/free-solid-svg-icons'
 import './Main.css'
+import Exercise from '../Exercise/Exercise';
 
 const Main = () => {
+    const [exercises, setExercises] = useState([]);
+    useEffect(() => {
+        fetch('exercises.json')
+            .then(res => res.json())
+            .then(data => setExercises(data))
+    }, [])
+
     return (
         <div className='main'>
             <div className='exercises'>
@@ -15,6 +23,15 @@ const Main = () => {
                         </h1>
                     </div>
                     <h2>Choose your activities for today</h2>
+                </div>
+                <div>
+                    <h1>{exercises.length}</h1>
+                    {
+                        exercises.map(exercise => <Exercise
+                            key={exercise.name}
+                            exercise={exercise}
+                        ></Exercise>)
+                    }
                 </div>
             </div>
             <div className='user'>
