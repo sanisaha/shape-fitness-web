@@ -1,12 +1,18 @@
 import React from 'react';
+import './Exercise.css'
 
 const Exercise = (props) => {
-    const { name, img } = props.exercise;
-    console.log(img);
+    const { name, img, description, gender, time } = props.exercise;
     return (
-        <div>
-            <h1>Name: {name}</h1>
+        <div className='exercise-category'>
             <img src={img} alt="" />
+            <h3>{name}</h3>
+            <p className='description'>{description}</p>
+            <div className='exercise-info'>
+                <p>Target group: {gender}</p>
+                <p>Time Spent: {time}min</p>
+            </div>
+            <button className='btn-add'><p>Add today</p></button>
         </div>
     );
 };

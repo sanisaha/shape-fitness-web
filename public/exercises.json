@@ -1,9 +1,65 @@
 [
     {
+        "name": "Badminton",
+        "img": "./images/badminton.jpg",
+        "description": "Helps in toning your muscles and improves your flexibility",
+        "gender": "Male & Female",
+        "time": 60
+    },
+    {
+        "name": "Cycling",
+        "img": "./images/biking.jpg",
+        "description": "Lower body workout that works your quads, hamstrings, and calves",
+        "gender": "Male & Female",
+        "time": 120
+    },
+    {
+        "name": "Futsal",
+        "img": "./images/Futsal-Ball.jpg",
+        "description": "Increase hearts endurance, lung capacity, muscle power and mental health.",
+        "gender": "Male",
+        "time": 60
+    },
+    {
+        "name": "Kayaking",
+        "img": "./images/kayaking.jpg",
+        "description": "Kayaking can help you to shed some weight and increase muscle strength",
+        "gender": "Male & Female",
+        "time": 90
+    },
+    {
+        "name": "Strength Training",
+        "img": "./images/strength training.jpg",
+        "description": "Help you manage or lose weight and increase your metabolism to burn calories",
+        "gender": "Male",
+        "time": 60
+    },
+    {
+        "name": "Swimming",
+        "img": "./images/swimming.jpg",
+        "description": "swimming stretches your muscles and increases flexibility",
+        "gender": "Male & Female",
+        "time": 30
+    },
+    {
+        "name": "Table-Tennis",
+        "img": "./images/table-tennis.jpg",
+        "description": "Increases concentration and alertness, stimulates brain function",
+        "gender": "Male & Female",
+        "time": 45
+    },
+    {
         "name": "Walking",
         "img": "./images/walking.jpg",
-        "description": "633478a0a00692d2f9f35b55",
-        "gender": "633478a0d5206b721b3b3b91",
-        "time": 131
+        "description": "Walking is a great way to improve or maintain your overall health",
+        "gender": "Female",
+        "time": 90
+    },
+    {
+        "name": "Yoga",
+        "img": "./images/yoga.jpg",
+        "description": "Yoga lower blood pressure, strengthen the immune system and reduce stress levels.",
+        "gender": "Female",
+        "time": 60
     }
 ]

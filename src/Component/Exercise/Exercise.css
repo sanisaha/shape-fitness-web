@@ -1,0 +1,47 @@
+.exercise-category img {
+    height: 150px;
+    width: 320px;
+    border-radius: 8px;
+}
+
+
+.exercise-category {
+    padding: 5px 10px;
+    margin-top: 40px;
+    border: 1px solid gainsboro;
+    background-color: azure;
+    border-radius: 8px;
+}
+
+.exercise-category h3 {
+    margin: 4px;
+}
+
+.exercise-category p {
+    margin: 4px;
+}
+
+.description {
+    margin: 0;
+    word-wrap: break-word;
+}
+
+.exercise-info {
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+.btn-add {
+    width: 90%;
+    padding: 5px;
+    margin: 5px;
+}
+
+.btn-add p {
+    font-size: large;
+    font-weight: 500;
+}
+
+.btn-add:hover {
+    background-color: peachpuff;
+}

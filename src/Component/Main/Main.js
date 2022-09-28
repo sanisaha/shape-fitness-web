@@ -24,8 +24,7 @@ const Main = () => {
                     </div>
                     <h2>Choose your activities for today</h2>
                 </div>
-                <div>
-                    <h1>{exercises.length}</h1>
+                <div className='exercise-container'>
                     {
                         exercises.map(exercise => <Exercise
                             key={exercise.name}

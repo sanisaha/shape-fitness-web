@@ -21,3 +21,9 @@
     font-style: italic;
     margin-left: 20px;
 }
+
+.exercise-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
