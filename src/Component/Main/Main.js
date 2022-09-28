@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHeartPulse } from '@fortawesome/free-solid-svg-icons'
 import './Main.css'
 import Exercise from '../Exercise/Exercise';
+import User from '../User/User';
 
 const Main = () => {
     const [exercises, setExercises] = useState([]);
@@ -34,7 +35,7 @@ const Main = () => {
                 </div>
             </div>
             <div className='user'>
-                <h2>User info</h2>
+                <User></User>
             </div>
         </div>
     );
