@@ -83,3 +83,15 @@
     border: none;
     background-color: rgb(223, 227, 230);
 }
+
+.btn-activity {
+    background-color: rgb(67, 121, 91);
+    width: 80%;
+    margin: 20px 10%;
+    border-radius: 8px;
+}
+
+.btn-activity p {
+    font-weight: 600;
+    font-size: medium;
+}

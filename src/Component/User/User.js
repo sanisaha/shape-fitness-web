@@ -1,10 +1,16 @@
 import React from 'react';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faUser, faLocationDot } from '@fortawesome/free-solid-svg-icons'
 import './User.css'
-
 const User = (props) => {
     const { breakAdd } = props;
+    const notify = () => {
+        toast.success('Well done! keep it up', {
+            position: "bottom-right"
+        });
+    }
     return (
         <div className='user-information'>
             <div>
@@ -57,6 +63,10 @@ const User = (props) => {
                 <p>
                     <span id='break-time'>0</span> minutes
                 </p>
+            </div>
+            <div>
+                <button className='btn-activity' onClick={notify}><p>Activity Completed</p></button>
+                <ToastContainer />
             </div>
         </div>
     );
