@@ -12,7 +12,21 @@ const Main = () => {
             .then(res => res.json())
             .then(data => setExercises(data))
     }, [])
+    const [breakTime, setBreakTime] = useState([]);
+    useEffect(() => {
+        if (localStorage.getItem('breakTime') === null) {
+            localStorage.setItem('breakTime', 0);
+            const newBreak = document.getElementById('break-time')
+            const breakTime = localStorage.getItem('breakTime')
+            newBreak.innerText = breakTime;
+            setBreakTime(newBreak);
 
+        }
+        const newBreak = document.getElementById('break-time')
+        const breakTime = localStorage.getItem('breakTime')
+        newBreak.innerText = breakTime;
+        setBreakTime(newBreak);
+    }, [])
 
     const btnHandler = (exercise) => {
         const activityTime = document.getElementById('activity-time')
@@ -26,17 +40,7 @@ const Main = () => {
         localStorage.setItem('breakTime', id);
 
     }
-    const [breakTime, setBreakTime] = useState(0);
-    useEffect(() => {
-        const newBreak = document.getElementById('break-time')
-        const breakTime = localStorage.getItem('breakTime')
-        if (breakTime === null) {
-            localStorage.setItem('breakTime', 0);
 
-        }
-        newBreak.innerText = breakTime;
-        setBreakTime(newBreak);
-    }, [])
 
     return (
         <div className='main'>
