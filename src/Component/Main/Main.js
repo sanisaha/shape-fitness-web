@@ -15,8 +15,13 @@ const Main = () => {
 
     const btnHandler = (exercise) => {
         const activityTime = document.getElementById('activity-time')
-        activityTime.innerText = exercise.time;
-
+        const spendTime = parseInt(activityTime.innerText);
+        const newTime = spendTime + exercise.time;
+        activityTime.innerText = newTime;
+    }
+    const breakAdd = (id) => {
+        const breakTime = document.getElementById('break-time');
+        breakTime.innerHTML = id;
     }
 
     return (
@@ -42,7 +47,9 @@ const Main = () => {
                 </div>
             </div>
             <div className='user'>
-                <User></User>
+                <User
+                    breakAdd={breakAdd}
+                ></User>
             </div>
         </div>
     );

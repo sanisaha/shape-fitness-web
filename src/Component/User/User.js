@@ -3,7 +3,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faUser, faLocationDot } from '@fortawesome/free-solid-svg-icons'
 import './User.css'
 
-const User = () => {
+const User = (props) => {
+    const { breakAdd } = props;
     return (
         <div className='user-information'>
             <div>
@@ -36,25 +37,25 @@ const User = () => {
                 <h2>Break Period</h2>
             </div>
             <div className='break'>
-                <p>0m</p>
-                <p>5m</p>
-                <p>10m</p>
-                <p>15m</p>
-                <p>20m</p>
+                <button className='btn-break' onClick={() => breakAdd(0)}><p>0m</p></button>
+                <button className='btn-break' onClick={() => breakAdd(5)}><p>5m</p></button>
+                <button className='btn-break' onClick={() => breakAdd(10)}><p>10m</p></button>
+                <button className='btn-break' onClick={() => breakAdd(15)}><p>15m</p></button>
+                <button className='btn-break' onClick={() => breakAdd(20)}><p>20m</p></button>
             </div>
             <div>
                 <h2>Activity Details</h2>
             </div>
             <div className='time-spent'>
                 <h3>Activity time</h3>
-                <p id='activity-time'>
-
+                <p>
+                    <span id='activity-time'>0</span> minutes
                 </p>
             </div>
             <div className='time-spent'>
                 <h3>Break time</h3>
                 <p>
-
+                    <span id='break-time'>0</span> minutes
                 </p>
             </div>
         </div>

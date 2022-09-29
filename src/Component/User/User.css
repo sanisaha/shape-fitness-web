@@ -78,3 +78,8 @@
     margin-bottom: 10px;
     border-radius: 8px;
 }
+
+.btn-break {
+    border: none;
+    background-color: rgb(223, 227, 230);
+}
