@@ -12,6 +12,13 @@ const Main = () => {
             .then(res => res.json())
             .then(data => setExercises(data))
     }, [])
+    const [breakTime, setBreakTime] = useState([]);
+    useEffect(() => {
+        const newBreak = document.getElementById('break-time')
+        const breakTime = localStorage.getItem('breakTime')
+        newBreak.innerText = breakTime;
+        setBreakTime(newBreak);
+    }, [])
 
     const btnHandler = (exercise) => {
         const activityTime = document.getElementById('activity-time')
@@ -22,6 +29,7 @@ const Main = () => {
     const breakAdd = (id) => {
         const breakTime = document.getElementById('break-time');
         breakTime.innerHTML = id;
+        localStorage.setItem('breakTime', id);
 
     }
 
@@ -50,6 +58,7 @@ const Main = () => {
             <div className='user'>
                 <User
                     breakAdd={breakAdd}
+                    breakTime={breakTime}
                 ></User>
             </div>
         </div>
