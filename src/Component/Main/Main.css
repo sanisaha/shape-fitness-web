@@ -29,3 +29,14 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 15px;
 }
+
+@media only screen and (max-width: 700px) {
+    .main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .exercise-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
