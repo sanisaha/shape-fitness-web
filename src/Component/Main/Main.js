@@ -22,6 +22,7 @@ const Main = () => {
     const breakAdd = (id) => {
         const breakTime = document.getElementById('break-time');
         breakTime.innerHTML = id;
+
     }
 
     return (

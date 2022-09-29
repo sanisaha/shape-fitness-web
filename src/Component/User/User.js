@@ -37,11 +37,11 @@ const User = (props) => {
                 <h2>Break Period</h2>
             </div>
             <div className='break'>
-                <button className='btn-break' onClick={() => breakAdd(0)}><p>0m</p></button>
-                <button className='btn-break' onClick={() => breakAdd(5)}><p>5m</p></button>
-                <button className='btn-break' onClick={() => breakAdd(10)}><p>10m</p></button>
+                <button className='btn-break' onClick={() => breakAdd(0)}><p >0m</p></button>
+                <button className='btn-break' onClick={() => breakAdd(5)}><p >5m</p></button>
+                <button className='btn-break' onClick={() => breakAdd(10)}><p >10m</p></button>
                 <button className='btn-break' onClick={() => breakAdd(15)}><p>15m</p></button>
-                <button className='btn-break' onClick={() => breakAdd(20)}><p>20m</p></button>
+                <button className='btn-break' onClick={() => breakAdd(20)}><p >20m</p></button>
             </div>
             <div>
                 <h2>Activity Details</h2>
