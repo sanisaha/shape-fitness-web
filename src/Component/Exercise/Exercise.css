@@ -50,6 +50,20 @@
 @media only screen and (max-width: 700px) {
     .exercise-category img {
         width: 100%;
-        height: 50%;
+        height: 30%;
+    }
+
+    .exercise-category {
+        position: relative;
+    }
+
+    .btn-add {
+        bottom: 0;
+        position: absolute;
+    }
+
+    .exercise-info {
+        margin-bottom: 10px;
+        font-weight: 600;
     }
 }
