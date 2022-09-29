@@ -38,7 +38,7 @@ const Main = () => {
             <div className='exercises'>
                 <div>
                     <div className='title-icon'>
-                        <FontAwesomeIcon className='fa-xl' icon={faHeartPulse} />
+                        <FontAwesomeIcon className='fa-2xl' icon={faHeartPulse} />
                         <h1 title='Sound Health by Actively Performing Exercises'>
                             S H A P E
                         </h1>
