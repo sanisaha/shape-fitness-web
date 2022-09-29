@@ -8,7 +8,8 @@ const User = (props) => {
     const { breakAdd } = props;
     const notify = () => {
         toast.success('Well done! keep it up', {
-            position: "bottom-right"
+            position: "bottom-right",
+            theme: "colored"
         });
     }
     return (
