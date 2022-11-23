@@ -1,5 +1,8 @@
 # Getting Started with Create React App
 
+# Website Name - Shape Yourself
+# live website link - https://dancing-macaron-1a91ce.netlify.app/
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
